@@ -1,18 +1,14 @@
-"""
 
-"""
-# Crear dos objetos de la clase 02
+import mis_clases
 
-# objeto 01
-
-# crear
-
-# Presentar objeto; usar el método __st__
-
-# objeto 02
-
-# crear ingresando valores por teclado
-
-# Presentar objeto; usar el método __st__
+casa1 = mis_clases.Casa("Pitas", 3, "Blanco", 6)
+print(casa1)
 
 
+ubicacion = input(str("\nIngrese la ubicación:\n> "))
+pisos = int(input("Ingrese el número de pisos:\n> "))
+color = input(str("Ingrese el color de la casa:\n> "))
+ventanas = int(input("Ingrese el número de ventanas:\n> "))
+
+casa2 = mis_clases.Casa(ubicacion, pisos, color, ventanas)
+print(f"\n{casa2}")

@@ -1,18 +1,14 @@
-"""
 
-"""
-# Crear dos objetos de la clase 01
+import mis_clases
 
-# objeto 01
-
-# crear
-
-# Presentar objeto; usar el método __st__
-
-# objeto 02
-
-# crear ingresando valores por teclado
-
-# Presentar objeto; usar el método __st__
+persona1 = mis_clases.Persona("1105747016", "Sebastián", "Calderón", 18)
+print(persona1)
 
 
+nombre = input(str("\nIngrese su nombre:\n> "))
+apellido = input(str("Ingrese su apellido:\n> "))
+cedula = input(str("Ingrese su cedula:\n> "))
+edad = int(input("Ingrese su edad:\n> "))
+
+persona2 = mis_clases.Persona(nombre, apellido, cedula, edad)
+print(f"\n{persona2}")
